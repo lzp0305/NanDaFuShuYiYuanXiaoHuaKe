@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>南昌大学第一附属医院消化科</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="lib/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jquery-1.10.1.min.js"></script>
+	<script src="lib/idangerous.swiper.min.js"></script>
+</head>
+<body style="font-family: Microsoft YaHei; background: #fff;">
+<div class="header">
+	<div class="wraper">
+		<div class="top-bar">
+			<p class="welcome">欢迎您来到南昌大学第一附属医院消化科！</p>
+			<a href="" class="wx">微信
+				<img src="" alt="" class="wx-qr">
+			</a>
+			<a href="" class="wb">微博</a>
+		</div>
+		<div class="logo-bar">
+			<a href="" class="logo"></a>
+			<p class="ht1">江西省消化及消化内镜质控中心</p>
+			<p class="ht2">江西省消化系统疾病临床医学研究中心</p>
+			<img src="images/yuanxun.png" alt="" class="yx">
+		</div>
+		<div class="jz">
+			<ul class="menu">
+				<li><a href="" class="on">网站首页</a></li>
+				<li><a href="">中心介绍</a></li>
+				<li><a href="">新闻中心</a></li>
+				<li><a href="">质控标准</a></li>
+				<li><a href="">质控培训</a></li>
+				<li><a href="">医学科普</a></li>
+				<li><a href="">学术研究</a></li>
+				<li><a href="">下载中心</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="banner">
+	<a href="" class="arrow-left"></a>
+	<a href="" class="arrow-right"></a>
+	<div class="swiper-container container1">
+		<div class="swiper-wrapper wrapper1">
+			<div class="swiper-slide"><a href=""><img src="images/banner1.png" alt=""></a></div>
+			<div class="swiper-slide"><a href=""><img src="images/banner1.png" alt=""></a></div>
+			<div class="swiper-slide"><a href=""><img src="images/banner1.png" alt=""></a></div>
+		</div>
+	</div>
+	<script>
+		var swiper1 = new Swiper('.container1',{
+			senteredSlides: true,
+			autoplay: 2500,
+			loop: true,
+		})
+		$('.arrow-left').on('click', function(e){
+			e.preventDefault()
+			swiper1.swipePrev()
+		})
+		$('.arrow-right').on('click', function(e){
+			e.preventDefault()
+			swiper1.swipeNext()
+		})
+	</script>
+</div>
+</body>
+</html>
