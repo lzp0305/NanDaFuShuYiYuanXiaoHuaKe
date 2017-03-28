@@ -52,18 +52,22 @@
 	</div>
 	<script>
 		var swiper1 = new Swiper('.container1',{
-			senteredSlides: true,
 			autoplay: 2500,
 			loop: true,
-		})
+		});
 		$('.arrow-left').on('click', function(e){
-			e.preventDefault()
-			swiper1.swipePrev()
-		})
+			e.preventDefault();
+			swiper1.swipePrev();
+			swiper1.startAutoplay();
+		});
 		$('.arrow-right').on('click', function(e){
-			e.preventDefault()
-			swiper1.swipeNext()
-		})
+			e.preventDefault();
+			swiper1.swipeNext();
+			swiper1.startAutoplay();
+		});
+		
+		
+		
 	</script>
 </div>
 </body>
