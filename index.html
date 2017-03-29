@@ -9,7 +9,7 @@
 	<script src="lib/jquery-1.10.1.min.js"></script>
 	<script src="lib/idangerous.swiper.min.js"></script>
 </head>
-<body style="font-family: Microsoft YaHei; background: #fff;">
+<body>
 <div class="header">
 	<div class="wraper">
 		<div class="top-bar">
@@ -28,10 +28,26 @@
 		<div class="jz">
 			<ul class="menu">
 				<li><a href="" class="on">网站首页</a></li>
-				<li><a href="">中心介绍</a></li>
-				<li><a href="">新闻中心</a></li>
+				<li><a href="">中心介绍</a>
+					<ul class="menu-2">
+						<li><a href="">中心简介</a></li>
+						<li><a href="">专家团队</a></li>
+					</ul>
+				</li>
+				<li><a href="">新闻中心</a>
+					<ul class="menu-2">
+						<li><a href="">通知公告</a></li>
+						<li><a href="">学术会议</a></li>
+						<li><a href="">健康咨询</a></li>
+					</ul>
+				</li>
 				<li><a href="">质控标准</a></li>
-				<li><a href="">质控培训</a></li>
+				<li><a href="">质控培训</a>
+					<ul class="menu-2">
+						<li><a href="">培训课程</a></li>
+						<li><a href="">培训课件</a></li>
+					</ul>
+				</li>
 				<li><a href="">医学科普</a></li>
 				<li><a href="">学术研究</a></li>
 				<li><a href="">下载中心</a></li>
@@ -40,6 +56,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="banner">
 	<a href="" class="arrow-left"></a>
 	<a href="" class="arrow-right"></a>
@@ -52,7 +69,7 @@
 	</div>
 	<script>
 		var swiper1 = new Swiper('.container1',{
-			autoplay: 2500,
+			autoplay: 3000,
 			loop: true,
 		});
 		$('.arrow-left').on('click', function(e){
@@ -70,5 +87,71 @@
 		
 	</script>
 </div>
+
+<div class="main">
+
+	<ul class="btn-menu">
+		<li>
+			<a href="" style="background: url(images/btn-bz.png) no-repeat; ">质控标准</a>
+		</li>
+		<li>
+			<a href="" style="background: url(images/btn-px.png) no-repeat; ">质控培训</a>
+		</li>
+		<li>
+			<a href="" style="background: url(images/btn-kp.png) no-repeat; ">医学科普</a>
+		</li>
+		<li>
+			<a href="" style="background: url(images/btn-yj.png) no-repeat; ">学术研究</a>
+		</li>
+		<li>
+			<a href="" style="background: url(images/btn-zx.png) no-repeat; ">下载中心</a>
+		</li>
+	</ul>
+
+	<div class="intr">
+		<p class="main-tc">中心简介</p>
+		<p class="main-te">/CENTER INTRODUCTION</p>
+		<p class="intr-text">消化学科是我省消化专业技术人才最集中的学科。<br>拥有一批国内著名省内顶级的消化病专家，以吕农华教授为领军人的团队中，不仅有朱萱、陈幼祥、郭贵海、李国华、刘志坚、李弼明教授等一批优秀的学术与技术骨干，还有张焜和、谢勇、罗时文、白爱平教授等一批优秀的学术与研究型骨干，以及祝荫、舒徐、廖旺娣、周晓东、游宇等一批中青年博士。中青年医师均有研究生学历，其中博士25人，海外留学归国人员11人。现有教授/主任医师11人，其中二级教授5人，副教授/副主任医师12人；</p>
+	</div>
+
+	<div class="news">
+		<p class="main-tc">新闻中心</p>
+		<p class="main-te">/NEWS</p>
+		<div class="news-slide">
+			<a href="" class="news-left"></a>
+			<a href="" class="news-right"></a>
+			<div class="swiper-container container2">
+				<div class="swiper-wrapper wrapper2">
+					<div class="swiper-slide"><a href=""><img src="images/news-slide1.png" alt=""></a></div>
+					<div class="swiper-slide"><a href=""><img src="images/news-slide1.png" alt=""></a></div>
+					<div class="swiper-slide"><a href=""><img src="images/news-slide1.png" alt=""></a></div>
+				</div>
+			</div>
+			<div class="pagination2"></div>
+			<script>
+				var swiper2 = new Swiper('.container2',{
+					pagination: '.pagination2',
+					autoplay: 1000,
+					loop: true,
+					paginationClickable: true,
+				});
+				$('.news-left').on('click', function(e){
+					e.preventDefault();
+					swiper2.swipePrev();
+					swiper2.startAutoplay();
+				});
+				$('.news-right').on('click', function(e){
+					e.preventDefault();
+					swiper2.swipeNext();
+					swiper2.startAutoplay();
+				});
+				
+				
+				
+			</script>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
