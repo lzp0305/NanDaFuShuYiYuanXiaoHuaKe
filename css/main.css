@@ -35,13 +35,15 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .btn-menu { position: relative; top: -51px; width: 1100px; z-index: 10; }
 .btn-menu>li { float: left; }
 .btn-menu>li>a { display: block; width: 130px; height: 38px; text-align: center; color: #0178bc; font-size: 18px; line-height: 32px; padding-top: 130px; margin:0 45px; }
-.intr { padding-top: 165px; width: 1100px; height: 250px; background: url(../images/main-zxjj.png) no-repeat; background-position: right 0 bottom 0; }
-.main-tc, .main-te { display: inline-block; line-height: 20px; font-size: 20px; }
-.main-tc { padding-left: 7px; color: #0178bc; }
+.intr { position: relative; padding-top: 165px; width: 1100px; height: 250px; background: url(../images/main-zxjj.png) no-repeat; background-position: right 0 bottom 0; }
+.main-tc, .main-te { display: inline-block; line-height: 20px; font-size: 20px; padding-left: 7px; }
+.main-tc { color: #0178bc; }
 .main-te { color: #bcbcbc; }
 .intr-text { font-size: 14px; width: 581px; padding: 42px 0 0 7px; }
+.intr-btn { position: absolute; top: 276px; left: 609px; display: block; width: 94px; height: 42px; border: none; background: #515151; color: #fff; font-size: 16px; text-align: center; line-height: 42px;}
 .news { position: relative; width: 1100px; height: 332px; padding-top: 26px; }
 .news-slide { position: absolute; top: 60px; left: 7px; width: 426px; height: 298px; }
+.container2 { width: 426px; height: 298px; }
 .news-left { display: block; position: absolute; left: 0; top: 134px; width: 30px; height: 30px; background: url(../images/news-left.png) no-repeat; z-index: 10; }
 .news-left:hover { background: url(../images/news-left-h.png) no-repeat; }
 .news-right { display: block; position: absolute; right: 0; top: 134px; width: 30px; height: 30px; background: url(../images/news-right.png) no-repeat; z-index: 10; }
@@ -49,4 +51,30 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .pagination2 { position: absolute; bottom: 5px; right: 5px; width: 60px; height: 10px;; z-index: 10;}
 .swiper-pagination-switch { display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #0178bc; margin: 0 5px; cursor: pointer; opacity: 0.5; }
 .swiper-active-switch { background: #00649f; opacity: 1; }
-
+.news-tab { position: absolute; top: 60px; right: 0; width: 631px; height: 298px; }
+.tabs { height: 26px; }
+.tab-btn { display: inline-block; width: 85px; height: 26px; margin-right: 49px; font-size: 16px; color: #000; text-align: center; line-height: 26px; }
+.tab-on { background: url(../images/tab-bg.png) no-repeat; color: #fff; }
+.little-more { display: inline-block; width: 75px; height: 18px; background: #eef1f6; color: #007abd; text-align: center; font-size: 12px; line-height: 18px; }
+.news-more { position: absolute; top: 4px; right: 17px; }
+.nt { width: 631px; height: 250px; margin-top: 22px; }
+.nl { margin-bottom: 7px; }
+.nl>a { display: inline-block; height: 16px; padding-left: 20px; margin-bottom: 7px; font-size: 16px; line-height: 16px; background: url(../images/nl.png) no-repeat; background-position: 0 5px; }
+.nl-on>a { color: #0178bc; background: url(../images/nl-on.png) no-repeat; background-position: 0 5px; }
+.nl-on>.nl-text { display: block; padding-left: 20px; padding-right: 17px; }
+.nl>span { font-size: 14px; line-height: 16px; color: #a3a3a3; float: right; margin-right: 17px; }
+.nl-text { display: none; font-size: 14px; line-height: 25px; color: #a3a3a3; }
+.team { position: relative; padding-top: 50px; width: 1100px; height: 226px; }
+.team-more { position: absolute; top: 54px; right: 17px; }
+.team-list { position: absolute; bottom: 0; left: 7px; width: 1086px; height: 180px; }
+.ys-li { position: relative; width: 494px; height: 180px; float: left; }
+.ys-img { width: 148px; height: 180px; background: url(../images/ys1.png) no-repeat; }
+.ys-div { position: absolute; left: 148px; top: 0; width: 346px; height: 180px; }
+.ys-name { position: absolute; left: 28px; top: 0; display: inline-block; line-height: 18px; font-size: 18px; color: #000; }
+.ys-zw { position: absolute; left: 119px; top: 0; display: inline-block; line-height: 18px; font-size: 16px; color: #000; }
+.ys-xx { position: absolute; left: 28px; top: 51px; display: inline-block; width: 300px; line-height: 18px; font-size: 14px; color: #707070; }
+.xq { position: absolute; left: 28px; bottom: 0; display: block; width: 88px; height: 36px; font-size: 14px; line-height: 36px; color: #fff; text-align: center; background: #057bc1; }
+.show { display: block; }
+.hide { display: none; }
+.qual { position: relative; width: 1100px; height: 352px; padding-top: 55px; }
+.qual-more { position: absolute; top: 59px; right: 322px; }
