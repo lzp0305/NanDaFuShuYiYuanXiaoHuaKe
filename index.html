@@ -10,12 +10,13 @@
 	<script src="lib/idangerous.swiper.min.js"></script>
 </head>
 <body>
+<!-- 头部开始 -->
 <div class="header">
 	<div class="wraper">
 		<div class="top-bar">
 			<p class="welcome">欢迎您来到南昌大学第一附属医院消化科！</p>
 			<a href="" class="wx">微信
-				<img src="" alt="" class="wx-qr">
+				<img src="" alt="" class="wx-qr"><!-- 二维码 -->
 			</a>
 			<a href="" class="wb">微博</a>
 		</div>
@@ -56,10 +57,13 @@
 		</div>
 	</div>
 </div>
-
+<!-- 头部结束 -->
+<!-- banner 开始 -->
 <div class="banner">
+	<!-- 按钮 -->
 	<a href="" class="arrow-left"></a>
 	<a href="" class="arrow-right"></a>
+	<!-- 轮播 -->
 	<div class="swiper-container container1">
 		<div class="swiper-wrapper wrapper1">
 			<div class="swiper-slide"><a href=""><img src="images/banner1.png" alt=""></a></div>
@@ -67,29 +71,11 @@
 			<div class="swiper-slide"><a href=""><img src="images/banner1.png" alt=""></a></div>
 		</div>
 	</div>
-	<script>
-		var swiper1 = new Swiper('.container1',{
-			autoplay: 3000,
-			loop: true,
-		});
-		$('.arrow-left').on('click', function(e){
-			e.preventDefault();
-			swiper1.swipePrev();
-			swiper1.startAutoplay();
-		});
-		$('.arrow-right').on('click', function(e){
-			e.preventDefault();
-			swiper1.swipeNext();
-			swiper1.startAutoplay();
-		});
-		
-		
-		
-	</script>
 </div>
-
+<!-- banner 结束 -->
+<!-- 内容开始 -->
 <div class="main">
-
+	<!-- 5个按钮 -->
 	<ul class="btn-menu">
 		<li><a href="" style="background: url(images/btn-bz.png) no-repeat; ">质控标准</a></li>
 		<li><a href="" style="background: url(images/btn-px.png) no-repeat; ">质控培训</a></li>
@@ -97,17 +83,18 @@
 		<li><a href="" style="background: url(images/btn-yj.png) no-repeat; ">学术研究</a></li>
 		<li><a href="" style="background: url(images/btn-zx.png) no-repeat; ">下载中心</a></li>
 	</ul>
-
+	<!-- 简介 -->
 	<div class="intr">
 		<p class="main-tc">中心简介</p>
 		<p class="main-te">/CENTER INTRODUCTION</p>
 		<p class="intr-text">消化学科是我省消化专业技术人才最集中的学科。<br>拥有一批国内著名省内顶级的消化病专家，以吕农华教授为领军人的团队中，不仅有朱萱、陈幼祥、郭贵海、李国华、刘志坚、李弼明教授等一批优秀的学术与技术骨干，还有张焜和、谢勇、罗时文、白爱平教授等一批优秀的学术与研究型骨干，以及祝荫、舒徐、廖旺娣、周晓东、游宇等一批中青年博士。中青年医师均有研究生学历，其中博士25人，海外留学归国人员11人。现有教授/主任医师11人，其中二级教授5人，副教授/副主任医师12人；</p>
 		<a href="" class="intr-btn">MORE+</a>
 	</div>
-
+	<!-- 新闻 -->
 	<div class="news">
 		<p class="main-tc">新闻中心</p>
 		<p class="main-te">/NEWS</p>
+		<!-- 左侧轮播 -->
 		<div class="news-slide">
 			<a href="" class="news-left"></a>
 			<a href="" class="news-right"></a>
@@ -119,25 +106,8 @@
 				</div>
 			</div>
 			<div class="pagination2"></div>
-			<script>
-				var swiper2 = new Swiper('.container2',{
-					pagination: '.pagination2',
-					autoplay: 2500,
-					loop: true,
-					paginationClickable: true,
-				});
-				$('.news-left').on('click', function(e){
-					e.preventDefault();
-					swiper2.swipePrev();
-					swiper2.startAutoplay();
-				});
-				$('.news-right').on('click', function(e){
-					e.preventDefault();
-					swiper2.swipeNext();
-					swiper2.startAutoplay();
-				});	
-			</script>
 		</div>
+		<!-- 右侧选项卡 -->
 		<div class="news-tab">
 			<div class="tabs">
 				<a href="" class="tab-btn tab-on">通知公告</a>
@@ -245,43 +215,16 @@
 					</ul>
 				</div>
 			</div>
-			<script>
-				var swiper3 = new Swiper('.nt',{
-					onlyExternal : true,
-					speed:500
-				})
-				$(".tabs a").on('touchstart mousedown',function(e){
-					e.preventDefault()
-					$(".tabs .tab-on").removeClass('tab-on')
-					$(this).addClass('tab-on')
-					swiper3.swipeTo( $(this).index() )
-				})
-				$(".tabs a").click(function(e){
-					e.preventDefault()
-				})
-
-				$('.nl').on('mouseover',function(e){
-					e.preventDefault()
-					$('.nl-on').removeClass('nl-on');
-					$(this).addClass('nl-on');
-				})
-
-				$('.tab-btn').on('click',function(){
-					$('.wrapper3').find('ul li:first-child').addClass('nl-on')
-				})
-
-
-			</script>
 		</div>
 	</div>
-
+	<!-- 专家 -->
 	<div class="team">
 		<p class="main-tc">专家团队</p>
 		<p class="main-te">/EXPERT TEAM</p>
 		<a href="" class="little-more team-more">MORE+</a>
 		<ul class="team-list">
 			<li class="ys-li">
-				<div class="ys-img"></div>
+				<div class="ys-img"><img src="images/ys1.png" alt=""></div>
 				<div class="ys-div show">
 					<p class="ys-name">医师名字</p>
 					<p class="ys-zw">[主任医师 教授]</p>
@@ -290,7 +233,7 @@
 				</div>
 			</li>
 			<li class="ys-li">
-				<div class="ys-img"></div>
+				<div class="ys-img"><img src="images/ys1.png" alt=""></div>
 				<div class="ys-div hide">
 					<p class="ys-name">医师名字</p>
 					<p class="ys-zw">[主任医师 教授]</p>
@@ -299,7 +242,7 @@
 				</div>
 			</li>
 			<li class="ys-li">
-				<div class="ys-img"></div>
+				<div class="ys-img"><img src="images/ys1.png" alt=""></div>
 				<div class="ys-div hide">
 					<p class="ys-name">医师名字</p>
 					<p class="ys-zw">[主任医师 教授]</p>
@@ -308,7 +251,7 @@
 				</div>
 			</li>
 			<li class="ys-li">
-				<div class="ys-img"></div>
+				<div class="ys-img"><img src="images/ys1.png" alt=""></div>
 				<div class="ys-div hide">
 					<p class="ys-name">医师名字</p>
 					<p class="ys-zw">[主任医师 教授]</p>
@@ -317,7 +260,7 @@
 				</div>
 			</li>
 			<li class="ys-li">
-				<div class="ys-img"></div>
+				<div class="ys-img"><img src="images/ys1.png" alt=""></div>
 				<div class="ys-div hide">
 					<p class="ys-name">医师名字</p>
 					<p class="ys-zw">[主任医师 教授]</p>
@@ -326,30 +269,108 @@
 				</div>
 			</li>
 		</ul>
-		<script>
-			$('.ys-li').on('mouseover',function(){
-				$(this).prevAll('.ys-li').children('.show').removeClass('show')
-				$(this).prevAll('.ys-li').children('.ys-div').addClass('hide')
-				$(this).nextAll('.ys-li').children('.show').removeClass('show')
-				$(this).nextAll('.ys-li').children('.ys-div').addClass('hide')
-				$(this).prevAll('.ys-li').css('width','148px')
-				$(this).nextAll('.ys-li').css('width','148px')
-				$(this).children('.hide').removeClass('hide')
-				$(this).children('.ys-div').addClass('show')
-				$(this).css('width','494px')
-			})
-			$(window).on('load',function(){
-				$('.hide').parent('.ys-li').css('width','148px')
-			})
-		</script>
 	</div>
-
+	<!-- 质控 -->
 	<div class="qual">
 		<p class="main-tc">质控培训</p>
 		<p class="main-te">/QUALITY TRAINING</p>
 		<a href="" class="little-more qual-more">MORE+</a>
+		<!-- 左侧纵向选项卡 -->
+		<div class="zk">
+			<a href="" class="zkan zksp zkan-on">质控视频</a>
+			<a href="" class="zkan zkkj">质控课件</a>
+			<div class="swiper-container container4">
+				<div class="swiper-wrapper wrapper4">
+					<div class="swiper-slide">
+						<a href="" class="zk-a">
+							<p class="zk-at">美国专家应邀来院进行学术交流</p>
+							<p class="zk-ad">2017-03-30</p>
+							<p class="zk-te">周晓东 报道：近日，美国麻省理工学院比较医学系高级研员葛忠明博士应我院邀请，在消化内镜中心作了题为“ ...</p>
+						</a>
+						<a href="" class="zk-a">
+							<p class="zk-at">美国专家应邀来院进行学术交流</p>
+							<p class="zk-ad">2017-03-30</p>
+							<p class="zk-te">周晓东 报道：近日，美国麻省理工学院比较医学系高级研员葛忠明博士应我院邀请，在消化内镜中心作了题为“ ...</p>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="" class="zk-a">
+							<p class="zk-at">美国专家应邀来院进行学术交流</p>
+							<p class="zk-ad">2017-03-30</p>
+							<p class="zk-te">周晓东 报道：近日，美国麻省理工学院比较医学系高级研员葛忠明博士应我院邀请，在消化内镜中心作了题为“ ...</p>
+						</a>
+						<a href="" class="zk-a">
+							<p class="zk-at">美国专家应邀来院进行学术交流</p>
+							<p class="zk-ad">2017-03-30</p>
+							<p class="zk-te">周晓东 报道：近日，美国麻省理工学院比较医学系高级研员葛忠明博士应我院邀请，在消化内镜中心作了题为“ ...</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧广告位 -->
+		<a href="" class="xt xt1"></a>
+		<a href="" class="xt xt2"></a>
+	</div>
+	<!-- 协作中心 -->
+	<div class="coll">
+		<p class="coll-t">协作中心</p>
+		<a href="" class="coll-l"></a>
+		<a href="" class="coll-r"></a>
+		<div class="swiper-container container5">
+			<div class="swiper-wrapper wrapper5">
+				<div class="swiper-slide slide5">
+					<a href=""><img src="images/coll1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide5">
+					<a href=""><img src="images/coll1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide5">
+					<a href=""><img src="images/coll1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide5">
+					<a href=""><img src="images/coll1.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 友情链接 -->
+	<div class="link">
+		<p class="main-tc link-t">友情链接</p>
+		<p class="main-te link-t">/LINK</p>
+		<span class="line"></span>
+		<a href="" class="link-l"></a>
+		<a href="" class="link-r"></a>
+		<div class="swiper-container container6">
+			<div class="swiper-wrapper wrapper6">
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-
+<!-- 内容结束 -->
+<!-- 尾部开始 -->
+<div class="footer">
+	<p>Copyright (C) 2003 .All rights reserved. 江西省消化及消化内镜质控中心 版权所有  技术支持：<a href="http://www.yunduancn.com/" target="_blank">云端科技</a></p>
+</div>
+<!-- 尾部结束 -->
+<script src="js/main.js"></script>
 </body>
 </html>

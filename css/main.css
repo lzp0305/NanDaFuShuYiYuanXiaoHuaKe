@@ -4,9 +4,10 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .top-bar { height: 40px; width: 100%; }
 .welcome { display: inline-block; font-size: 14px; color: #fff; line-height: 20px; margin: 8px 0 0 10px; }
 .wx, .wb { float: right; width: 24px; height: 20px; padding-left: 26px; margin: 8px 0 0 24px; font-size: 12px; line-height: 20px; color: #fff; }
-.wx { background: url(../images/weixin.png) no-repeat; margin-right: 2px; }
+.wx { position: relative; background: url(../images/weixin.png) no-repeat; margin-right: 2px; }
 .wx:hover { background: url(../images/weixin-h.png) no-repeat; color: #0178bc; }
-.wx-qr { display: none;/*待补充*/}
+.wx-qr { position: absolute; top: 32px; right: 0; display: none; width: 100px; height: 100px; background: #eee; z-index: 10;}
+.wx:hover .wx-qr { display: block; }
 .wb { background: url(../images/weibo.png) no-repeat; }
 .wb:hover { background: url(../images/weibo-h.png) no-repeat; color: #0178bc; }
 .logo-bar { width:100%; height: 140px; position: relative; }
@@ -68,7 +69,7 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .team-more { position: absolute; top: 54px; right: 17px; }
 .team-list { position: absolute; bottom: 0; left: 7px; width: 1086px; height: 180px; }
 .ys-li { position: relative; width: 494px; height: 180px; float: left; }
-.ys-img { width: 148px; height: 180px; background: url(../images/ys1.png) no-repeat; }
+.ys-img { width: 148px; height: 180px; /*background: url(../images/ys1.png) no-repeat; */}
 .ys-div { position: absolute; left: 148px; top: 0; width: 346px; height: 180px; }
 .ys-name { position: absolute; left: 28px; top: 0; display: inline-block; line-height: 18px; font-size: 18px; color: #000; }
 .ys-zw { position: absolute; left: 119px; top: 0; display: inline-block; line-height: 18px; font-size: 16px; color: #000; }
@@ -78,3 +79,37 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .hide { display: none; }
 .qual { position: relative; width: 1100px; height: 352px; padding-top: 55px; }
 .qual-more { position: absolute; top: 59px; right: 322px; }
+.zk { position: absolute; top: 97px; left: 7px; width: 771px; height: 310px; }
+.zkan { display: block; width: 161px; height: 60px; font-size: 16px; line-height: 60px; text-align: center; background: #fff; color: #000; }
+.zkan-on { background: #057bc1; color: #fff; }
+.container4 { position: absolute; top: 0; left: 181px; width: 590px; height: 310px; }
+.zk-a { position: relative; display: block; width: 373px; height: 139px; padding-left: 217px; margin-bottom: 30px; background: url(../images/zk1.png) no-repeat; }
+.zk-at { position: absolute; top: 0; left: 217px; font-size: 16px; line-height: 16px; color: #000; }
+.zk-ad { position: absolute; top: 32px; left: 217px; font-size: 14px; line-height: 14px; color: #a3a3a3; }
+.zk-te { position: absolute; top: 60px; left: 217px; font-size: 14px; line-height: 20px; color: #a3a3a3; }
+.xt { position: absolute; display: block; width: 305px; height: 136px; }
+.xt1 { top: 100px; right: 10px; background: url(../images/xt1.png) no-repeat; }
+.xt2 { top: 266px; right: 10px; background: url(../images/xt2.png) no-repeat; }
+.coll { position: relative; width: 1100px; height: 210px; margin-top: 61px; background: url(../images/coll-bg.png) no-repeat; }
+.coll-t { position: absolute; top: 50px; left: 20px; display: inline-block; line-height: 40px; font-size: 20px; color: #fff; }
+.container5 { position: absolute; top: 20px; right: 39px; width: 772px; height: 171px; }
+.wrapper5 { text-align: center; }
+.slide5 { width: 245px; height: 171px; }
+.coll-l { position: absolute; top: 89px; left: 262px; width: 11px; height: 24px; background: url(../images/coll-l.png) no-repeat; }
+.coll-r { position: absolute; top: 89px; right: 12px; width: 11px; height: 24px; background: url(../images/coll-r.png) no-repeat; }
+.link { position: relative; width: 1100px; height: 230px; margin-top: 60px; }
+.link-t { margin-top: 5px; }
+.line { position: absolute; top: 16px; left: 159px;  width: 850px; height: 1px; background: #dcdcdc;  }
+.link-l { position: absolute; top: 0; right: 53px; display: block; width: 30px; height: 30px; background: url(../images/link-l.png) no-repeat; }
+.link-l:hover { background: url(../images/link-l-h.png) no-repeat; }
+.link-r { position: absolute; top: 0; right: 8px; display: block; width: 30px; height: 30px; background: url(../images/link-r.png) no-repeat; }
+.link-r:hover { background: url(../images/link-r-h.png) no-repeat; }
+.container6 { position: absolute; top: 56px; left: 0; width: 1100px; height: 100px; }
+.wrapper6 { text-align: center; }
+.slide6 { width: 206px; height: 100px; }
+.footer { width: 100%; height: 59px; background: #444; text-align: center; }
+.footer>p, .footer>p>a { font-size: 14px; line-height: 59px; color: #fff; }
+
+
+
+
