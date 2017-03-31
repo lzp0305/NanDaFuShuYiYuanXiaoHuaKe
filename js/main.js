@@ -5,7 +5,7 @@ console.log("完成时间：2017-03-30");
 // banner 轮播图
 var swiper1 = new Swiper('.container1',{
 	simulateTouch : false,
-	autoplay: 3000,
+	
 	loop: true,
 });
 $('.arrow-left').on('click', function(e){
@@ -81,11 +81,11 @@ var swiper4 = new Swiper('.container4',{
 });
 $('.zksp').on('click', function(e){
 	e.preventDefault();
-	swiper4.swipePrev();
+	swiper4.swipeTo(0, 500, false);
 });
 $('.zkkj').on('click', function(e){
 	e.preventDefault();
-	swiper4.swipeNext();
+	swiper4.swipeTo(1, 500, false);
 });
 $('.zkan').on('click',function(){
 	$('.zkan-on').removeClass('zkan-on');

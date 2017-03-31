@@ -32,7 +32,7 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .arrow-left:hover { background: url(../images/arrow-left-h.png) no-repeat; }
 .arrow-right { display: block; position: absolute; right: 0; top: 205px; width: 40px; height: 40px; background: url(../images/arrow-right.png) no-repeat; z-index: 10; }
 .arrow-right:hover { background: url(../images/arrow-right-h.png) no-repeat; }
-.main { width: 1100px; margin: 0 auto; }
+.main { position: relative; width: 1100px; margin: 0 auto; }
 .btn-menu { position: relative; top: -51px; width: 1100px; z-index: 10; }
 .btn-menu>li { float: left; }
 .btn-menu>li>a { display: block; width: 130px; height: 38px; text-align: center; color: #0178bc; font-size: 18px; line-height: 32px; padding-top: 130px; margin:0 45px; }
@@ -110,6 +110,25 @@ body { font-family: Microsoft YaHei; font-size: 0; background-color: #fff; }
 .footer { width: 100%; height: 59px; background: #444; text-align: center; }
 .footer>p, .footer>p>a { font-size: 14px; line-height: 59px; color: #fff; }
 
+.ny-banner { width: 1100px; height: 280px; position: relative; margin: 0 auto; overflow: visible!important; }
+.ny-container1 { width: 1920px; height: 280px; position: absolute; left: -410px; }
+.mbx { position: absolute; top: -14px; right: 9px; float: right; font-size: 14px; line-height: 14px; color: #717171; }
+.mbx>a { color: #717171; }
+.ny-cont { position: relative; width: 1100px; height: 862px; margin-top: 22px; }
+.ny-tc { display: block; padding-top: 4px; font-size: 20px; line-height: 20px; color: #353535; }
+.ny-te { display: block; padding-top: 5px; font-size: 14px; line-height: 14px; color: #919191; }
+.ny-line { position: absolute; top: 67px; left: 0; display: block; width: 100%; height: 1px; background: #dcdcdc; }
+.ny-div { position: absolute; top: 68px; left: 0; }
+.ny-lb { display: block; width: 174px; height: 44px; background: #fff; color: #000; font-size: 14px; line-height: 44px; padding-left: 26px; border-bottom: 1px solid #dcdcdc; }
+.ny-lb-on { background: #0178bc; color: #fff; }
+.ny-rb { position: absolute; top: 68px; right: 0; width: 900px; height: 794px; }
+.slide7 { position: relative; }
+.cont-t { position: absolute; top: 53px; left: 56px; display: block; font-size: 20px; line-height: 20px; color: #363636; }
+.cont-x { position: absolute; top: 97px; left: 56px; display: block; font-size: 14px; line-height: 20px; color: #8a8a8a; }
+.cont-qr { position: absolute; top: 80px; left: 424px; display: block; width: 253px; height: 125px; }
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+.BMap_Marker{background: url(../images/map-img.png) no-repeat center !important;}
 
 
 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>南昌大学第一附属医院消化科</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="lib/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jquery-1.10.1.min.js"></script>
+	<script src="lib/idangerous.swiper.min.js"></script>
+</head>
+<body>
+<!-- 头部开始 -->
+<div class="header">
+	<div class="wraper">
+		<div class="top-bar">
+			<p class="welcome">欢迎您来到南昌大学第一附属医院消化科！</p>
+			<a href="" class="wx">微信
+				<img src="images/qr.png" alt="" class="wx-qr"><!-- 二维码 -->
+			</a>
+			<a href="" class="wb">微博</a>
+		</div>
+		<div class="logo-bar">
+			<a href="" class="logo"></a>
+			<p class="ht1">江西省消化及消化内镜质控中心</p>
+			<p class="ht2">江西省消化系统疾病临床医学研究中心</p>
+			<img src="images/yuanxun.png" alt="" class="yx">
+		</div>
+		<div class="jz">
+			<ul class="menu">
+				<li><a href="" class="on">网站首页</a></li>
+				<li><a href="">中心介绍</a>
+					<ul class="menu-2">
+						<li><a href="">中心简介</a></li>
+						<li><a href="">专家团队</a></li>
+					</ul>
+				</li>
+				<li><a href="">新闻中心</a>
+					<ul class="menu-2">
+						<li><a href="">通知公告</a></li>
+						<li><a href="">学术会议</a></li>
+						<li><a href="">健康咨询</a></li>
+					</ul>
+				</li>
+				<li><a href="">质控标准</a></li>
+				<li><a href="">质控培训</a>
+					<ul class="menu-2">
+						<li><a href="">培训课程</a></li>
+						<li><a href="">培训课件</a></li>
+					</ul>
+				</li>
+				<li><a href="">医学科普</a></li>
+				<li><a href="">学术研究</a></li>
+				<li><a href="">下载中心</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 头部结束 -->
+<!-- banner 开始 -->
+<div class="ny-banner">
+	<div class="swiper-container ny-container1">
+		<div class="swiper-wrapper wrapper1">
+			<img src="images/ny-banner-lxwm.png" alt="">
+		</div>
+	</div>
+</div>
+<!-- banner 结束 -->
+<!-- 内容开始 -->
+<div class="main">
+	<!-- 面包屑导航 -->
+	<div class="mbx">当前位置：<a href="">首页</a>&gt;<a href="">中心介绍</a>&gt;<a href="">中心简介</a></div>
+	<!-- 联系我们 -->
+	<div class="ny-cont">
+		<p class="ny-tc">联系我们</p>
+		<p class="ny-te">Contact us</p>
+		<span class="ny-line"></span>
+		<div class="ny-div">
+			<a href="" class="ny-lb ny-lb1 ny-lb-on">联系我们</a>
+		</div>
+		<div class="swiper-container ny-rb">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide7">
+					<p class="cont-t">南昌大学第一附属医院消化科</p>
+					<p class="cont-x">电话：0791-87305775  87305776  87305778<br>传真：0791-87305668<br>邮箱：328510247@qq.com<br>邮编：330000<br>地址：南昌市青山湖区罗家镇货场村163号</p>
+					<img src="images/cont-qr.png" alt="" class="cont-qr">
+					<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+					<div style="position:absolute;top:277px;left:51px;width:825px;height:365px;" id="dituContent"></div>
+					<script src="js/ditu.js"></script>
+				</div>
+			</div>
+		</div>
+		<script>
+			var swiper7 = new Swiper('.ny-rb',{
+				simulateTouch : false,
+				mode: 'vertical',
+			});
+			$('.ny-lb1').on('click', function(e){
+				e.preventDefault();
+				swiper7.swipeTo(0, 500, false);
+			});
+			$('.ny-lb').on('click',function(){
+				$('.ny-lb-on').removeClass('ny-lb-on');
+				$(this).addClass('ny-lb-on');
+			});
+		</script>
+	</div>
+	<!-- 友情链接 -->
+	<div class="link">
+		<p class="main-tc link-t">友情链接</p>
+		<p class="main-te link-t">/LINK</p>
+		<span class="line"></span>
+		<a href="" class="link-l"></a>
+		<a href="" class="link-r"></a>
+		<div class="swiper-container container6">
+			<div class="swiper-wrapper wrapper6">
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+				<div class="swiper-slide slide6">
+					<a href=""><img src="images/link1.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 内容结束 -->
+<!-- 尾部开始 -->
+<div class="footer">
+	<p>Copyright (C) 2003 .All rights reserved. 江西省消化及消化内镜质控中心 版权所有  技术支持：<a href="http://www.yunduancn.com/" target="_blank">云端科技</a></p>
+</div>
+<!-- 尾部结束 -->
+<script src="js/main.js"></script>
+</body>
+</html>
