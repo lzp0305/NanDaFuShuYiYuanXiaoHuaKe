@@ -5,7 +5,7 @@ console.log("完成时间：2017-03-30");
 // banner 轮播图
 var swiper1 = new Swiper('.container1',{
 	simulateTouch : false,
-	
+	autoplay: 3000,
 	loop: true,
 });
 $('.arrow-left').on('click', function(e){
@@ -118,6 +118,76 @@ $('.link-l').on('click', function(e){
 $('.link-r').on('click', function(e){
 	e.preventDefault();
 	swiper6.swipeNext();
+});
+
+$('.xw-btn').on('click',function(){
+	$('.xw-btn-on').removeClass('xw-btn-on');
+	$(this).addClass('xw-btn-on');
+});
+// 如果当前页是第一页那么向左按钮锁定
+if ($('.xw-fp').hasClass('xw-btn-on')) {
+	$('.xw-btn-pre').css('color','#000');
+	$('.xw-btn-pre').hover(function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#000');
+	},function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#000');
+	});
+	$('.xw-btn-pre').attr('disabled',true);
+} else { 
+	$('.xw-btn-pre').css('color','#0178bc');
+	$('.xw-btn-pre').hover(function(){
+		$(this).css('background','#0178bc');
+		$(this).css('color','#fff');
+	},function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#0178bc');
+	});
+};
+
+// 如果当前页是最后一页那么向右按钮锁定
+if ($('.xw-lp').hasClass('xw-btn-on')) {
+	$('.xw-btn-nex').css('color','#000');
+	$('.xw-btn-nex').hover(function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#000');
+	},function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#000');
+	});
+	$('.xw-btn-nex').attr('disabled',true);
+} else { 
+	$('.xw-btn-nex').css('color','#0178bc');
+	$('.xw-btn-nex').hover(function(){
+		$(this).css('background','#0178bc');
+		$(this).css('color','#fff');
+	},function(){
+		$(this).css('background','#fff');
+		$(this).css('color','#0178bc');
+	});
+};
+
+
+var swiper7 = new Swiper('.ny-rb',{
+	simulateTouch : false,
+	mode: 'vertical',
+});
+$('.ny-lb1').on('click', function(e){
+	e.preventDefault();
+	swiper7.swipeTo(0, 500, false);
+});
+$('.ny-lb2').on('click', function(e){
+	e.preventDefault();
+	swiper7.swipeTo(1, 500, false);
+});
+$('.ny-lb3').on('click', function(e){
+	e.preventDefault();
+	swiper7.swipeTo(2, 500, false);
+});
+$('.ny-lb').on('click',function(){
+	$('.ny-lb-on').removeClass('ny-lb-on');
+	$(this).addClass('ny-lb-on');
 });
 
 
